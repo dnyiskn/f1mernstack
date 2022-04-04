@@ -19,7 +19,7 @@ function App() {
               <p>Name: {race.track}</p>
               <p>Country: {race.country}</p>
               <p>Location: {race.location}</p>
-              <p>Distance: {race.distance}</p>
+              <p>Distance: {race.distance} km</p>
             </div>
           );
         })}
