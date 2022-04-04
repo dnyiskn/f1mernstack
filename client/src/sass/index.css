@@ -1,0 +1,34 @@
+h1,
+h2,
+h3 {
+  font-family: "Formula1 Bold";
+}
+
+body {
+  font-family: "Formula1 Regular";
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.raceItem {
+  border: solid 1px red;
+}
+
+@font-face {
+  font-family: "Formula1 Bold";
+  src: url("../fonts/Formula1-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Formula1 Regular";
+  src: url("../fonts/Formula1-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Formula1 Wide";
+  src: url("../fonts/Formula1-Wide.ttf");
+}
+/*# sourceMappingURL=index.css.map */
