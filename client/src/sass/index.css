@@ -8,13 +8,66 @@ body {
   font-family: "Formula1 Regular";
 }
 
+h2 {
+  margin: 15px 0;
+}
+
+h3 {
+  margin: 0;
+  margin-right: 10px;
+}
+
+p {
+  margin: 0;
+}
+
 .title {
   text-align: center;
   font-size: 3rem;
 }
 
 .raceItem {
-  border: solid 1px red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.raceItem .locationRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.raceContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .raceContainer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+.trackMap {
+  max-width: 100%;
 }
 
 @font-face {
@@ -30,5 +83,9 @@ body {
 @font-face {
   font-family: "Formula1 Wide";
   src: url("../fonts/Formula1-Wide.ttf");
+}
+
+html {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

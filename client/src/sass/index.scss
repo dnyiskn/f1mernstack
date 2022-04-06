@@ -1,5 +1,6 @@
 @import "typography";
 @import "container";
+@import "images";
 
 @font-face {
   font-family: "Formula1 Bold";
@@ -12,4 +13,8 @@
 @font-face {
   font-family: "Formula1 Wide";
   src: url("../fonts/Formula1-Wide.ttf");
+}
+
+html {
+  margin: 0 auto;
 }

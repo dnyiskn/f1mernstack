@@ -1,3 +1,21 @@
 .raceItem {
-  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  .locationRow {
+    display: flex;
+    align-items: center;
+  }
+}
+.raceContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
