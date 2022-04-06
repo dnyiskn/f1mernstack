@@ -15,8 +15,26 @@
 .raceContainer {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 15px;
 
   @media only screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+  }
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #e10600;
+}
+.textContainer {
+}
+.statContainer {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+  margin-bottom: 10px;
+  @media only screen and (min-width: 1024px) {
+    width: 60%;
   }
 }

@@ -19,8 +19,8 @@ h3 {
   margin-right: 10px;
 }
 
-p {
-  margin: 0;
+span {
+  margin: 5px;
 }
 
 .location {
@@ -28,6 +28,7 @@ p {
 }
 
 .title {
+  color: white;
   text-align: center;
   font-size: 3rem;
 }
@@ -64,12 +65,38 @@ p {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  padding: 0 15px;
 }
 
 @media only screen and (min-width: 768px) {
   .raceContainer {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+}
+
+.titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e10600;
+}
+
+.statContainer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .statContainer {
+    width: 60%;
   }
 }
 
@@ -92,7 +119,7 @@ p {
   src: url("../fonts/Formula1-Wide.ttf");
 }
 
-html {
+body {
   margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

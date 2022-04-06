@@ -61,7 +61,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title">PITSTOP</h1>
+      <div className="titleContainer">
+        <h1 className="title">PITSTOP</h1>
+      </div>
       <div className="raceContainer">
         {listOfRaces.map((race) => {
           return (
@@ -74,13 +76,43 @@ function App() {
               <h2>{race.track}</h2>
               <div className="locationRow">
                 <h3>{race.country}</h3>
-                <p className="location">{race.location}</p>
+                <span className="location">{race.location}</span>
               </div>
-              <p>Length: {race.distance} km</p>
+              <div className="statContainer">
+                <span>
+                  <strong>Date: </strong>
+                  {race.date}
+                </span>
+                <span>
+                  <strong>Start: </strong>
+                  {race.startTime}
+                </span>
+                <span>
+                  <strong>Laps: </strong>
+                  {race.nolaps}
+                </span>
+                <span>
+                  <strong>Length: </strong>
+                  {race.distance} km
+                </span>
+                <span>
+                  <strong>Distance: </strong>
+                  {race.km} km
+                </span>
+                <span>
+                  <strong>Fastest Lap: </strong>
+                  {race.fastestLap}
+                </span>
+                <span>
+                  <strong>Duration: ~ </strong>
+                  {race.duration}
+                </span>
+              </div>
             </div>
           );
         })}
       </div>
+      <div className="footerContainer"></div>
     </div>
   );
 }
