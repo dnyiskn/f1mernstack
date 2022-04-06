@@ -9,16 +9,22 @@ body {
 }
 
 h2 {
+  font-size: 1.75rem;
   margin: 15px 0;
 }
 
 h3 {
+  font-size: 1.25rem;
   margin: 0;
   margin-right: 10px;
 }
 
 p {
   margin: 0;
+}
+
+.location {
+  font-size: 1.25rem;
 }
 
 .title {
@@ -50,6 +56,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 
 .raceContainer {

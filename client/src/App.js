@@ -74,9 +74,9 @@ function App() {
               <h2>{race.track}</h2>
               <div className="locationRow">
                 <h3>{race.country}</h3>
-                <p>{race.location}</p>
+                <p className="location">{race.location}</p>
               </div>
-              <p>Distance: {race.distance} km</p>
+              <p>Length: {race.distance} km</p>
             </div>
           );
         })}
